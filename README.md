@@ -19,9 +19,9 @@
 # Let's install the bot.
 :کدهای نصب به صورت تکی
 
-cd $HOME
+سی دی $ HOME
 
-git clone https://github.com/breakhear371/black_berry.git
+دستگاه گوارش کلون https://github.com/babakkhan375/black_berry.git3
 
 cd black_berry
 
