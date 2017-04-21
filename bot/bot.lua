@@ -1,5 +1,5 @@
--- #Beyond Reborn Robot
--- #@BeyondTeam
+-- #Black_Berry Robot
+-- #@BlackAndWhiteTM
 
 tdcli = dofile('./libs/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
@@ -16,7 +16,7 @@ JSON = (loadfile "./libs/dkjson.lua")()
 local lgi = require ('lgi')
 local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
---run_bash("~/BDReborn/clearcache.sh")
+--run_bash("~/Black_Berry/clearcache.sh")
 chats = {}
 
 
@@ -105,10 +105,10 @@ function create_config( )
 	cmd = '^[/!#]',
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Black_Berry v4.4
+    info_text = [[》Black_Berry v5.0
 An advanced administration bot based on https://valtman.name/telegram-cli
 
-》https://github.com/BeyondTeam/BDReborn 
+》https://github.com/babakkhan375/blackandwhite
 
 》Admins :
 》@SoLiD ➣ Founder & Developer《
