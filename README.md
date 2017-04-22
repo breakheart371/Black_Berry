@@ -2,15 +2,6 @@
 
 **An advanced and powerful administration bot based on NEW TG-CLI
 
-
-* * *
-
-## Commands
-
-| Use help |
-|:--------|:------------|
-| help | just send help in your group and get the commands |
-
 * * *
 
 # Installation
