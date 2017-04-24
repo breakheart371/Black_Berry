@@ -12,8 +12,7 @@
 
 سی دی $ HOME
 
-دستگاه گوارش کلون https://github.com/breakheart371/black_berry.git3
-
+دستگاه گوارش کلون https://github.com/breakheart371/black_berry.git
 cd black_berry
 
 chmod +x black.sh
