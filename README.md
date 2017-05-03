@@ -10,9 +10,9 @@
 # Let's install the bot.
 :کدهای نصب به صورت تکی
 
-سی دی $ HOME
+cd $HOME
 
-دستگاه گوارش کلون https://github.com/breakheart371/black_berry.git
+git clone https://github.com/breakheart371/black_berry.git
 cd black_berry
 
 chmod +x black.sh
