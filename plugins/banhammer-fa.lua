@@ -756,7 +756,7 @@ data[tostring(chat)]['is_silent_users'][tostring(matches[2])] = nil
       end
    end
 		if matches[1]:lower() == 'پاک کردن' and is_owner(msg) then
-			if matches[2] == 'bans' then
+			if matches[2] == 'لیست مسدود' then
 				if next(data[tostring(chat)]['banned']) == nil then
      if not lang then
 					return "_No_ *banned* _users in this group_"
@@ -794,7 +794,7 @@ data[tostring(chat)]['is_silent_users'][tostring(matches[2])] = nil
 			    end
         end
 		if matches[1]:lower() == 'پاک کردن' and is_sudo(msg) then
-			if matches[2] == 'gbans' then
+			if matches[2] == 'لیست بن گلوبال' then
 				if next(data['gban_users']) == nil then
     if not lang then
 					return "_No_ *globally banned* _users available_"
