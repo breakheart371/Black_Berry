@@ -2,7 +2,7 @@
 local function run (msg,matches)
 
   if matches[1]:lower() == 'clean' and matches[2]:lower() == 'blacklist' then
-    if not is_mod(msg) then
+if not is_sudo(msg) then
       return -- «Mods allowed»
     end
 	
@@ -29,5 +29,5 @@ return {
   },
   run = run,
 }
---End @Tele_Sudo
---Channel @LuaError
+--End @sudo_hacker
+--Channel @blackandwhiteTM

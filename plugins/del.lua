@@ -31,6 +31,6 @@ return {
     run = run
 }
 
---Write By @OFFLlNE
---Open By @LuaError
---Channel @LuaError
+--By: @sudo_hacker
+
+--Channel @blackandwhiteTM

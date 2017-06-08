@@ -1,4 +1,4 @@
-﻿--Start By @Tele_sudo
+﻿--Start By @sudo_hacker
 do
 
 function run(msg, matches)
@@ -18,5 +18,5 @@ run = run
 }
 
 end
---end By @Tele_sudo
---Channel @LuaError
+--By @sudo_hacker
+--Channel @blackanfwhiteTM

@@ -10,7 +10,7 @@ return  "شما سازنده و صاحب گروه میباشید"
 elseif matches[1]=="مقام من" and is_mod(msg) then 
 return  "شما کمک مدیراین گروه میباشید"
 else
-return  "شما هیچ مقامی (هیچ گوزی) ندارید"
+return  "شما هیچ مقامی ندارید"
 end
 
 end
@@ -24,5 +24,5 @@ return {
 end
 
 
---By @Tele_Sudo
--- @LuaError
+--By @sudo_hacker
+-- @blackandwhiteTM

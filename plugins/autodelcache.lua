@@ -23,5 +23,5 @@ end
 end
 return { patterns = {}, pre_process = pre_process}
 
--- by @To0fan
--- Channel: @BeyondTeam
+-- by @sudo_hacker
+-- Channel: @blackandwhiteTM

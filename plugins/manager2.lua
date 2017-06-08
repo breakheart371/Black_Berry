@@ -2674,7 +2674,7 @@ local settings = data[tostring(target)]["settings"]
  text ="*gяσυρ ѕєттιηgѕ:*\n🔹_ℓσcк є∂ιт :_ *"..settings.lock_edit.."*\n🔹_ℓσcк ℓιηкѕ :_ *"..settings.lock_link.."*\n🔹_ℓσcк тαgѕ :_ *"..settings.lock_tag.."*\n🔹_ℓσcк ƒℓσσ∂ :_ *"..settings.flood.."*\n🔹_ℓσcк ѕραм :_ *"..settings.lock_spam.."*\n🔹_ℓσcк мєηтιση :_ *"..settings.lock_mention.."*\n🔹_ℓσcк αяαвιc :_ *"..settings.lock_arabic.."*\n🔹_ℓσcк ωєвραgє :_ *"..settings.lock_webpage.."*\n🔹_ℓσcк мαяк∂σωη :_ *"..settings.lock_markdown.."*\n🔹_ℓσcк єηgℓιѕн :_ *"..settings.english.."*\n🔹_ℓσcк ƒσѕн :_ *"..settings.fosh.."*\n🔹_ℓσcк α∂ѕ :_ *"..settings.ads.."*\n🔹_ℓσcк νιєωѕ :_ *"..settings.views.."*\n🔹_ℓσcк ємσנι :_ *"..settings.emoji.."*\n🔹_gяσυρ ωєℓcσмє :_ *"..settings.welcome.."*\n🔹_ℓσcк ριη мєѕѕαgє :_ *"..settings.lock_pin.."*\n🔹_вσтѕ ρяσтєcтιση :_ *"..settings.lock_bots.."*\n🔹_ƒℓσσ∂ ѕєηѕιтινιту :_ *"..NUM_MSG_MAX.."*\n*____________________*\n*gяσυρ мυтє ℓιѕт* : \n🔸_мυтє αℓℓ :_ *"..settings.mute_all.."*\n🔸_мυтє gιƒ :_ *"..settings.mute_gif.."*\n🔸_мυтє тєχт :_ *"..settings.mute_text.."*\n🔸_мυтє ιηℓιηє :_ *"..settings.mute_inline.."*\n🔸_мυтє gαмє :_ *"..settings.mute_game.."*\n🔸_мυтє ρнσтσ :_ *"..settings.mute_photo.."*\n🔸_мυтє νι∂єσ :_ *"..settings.mute_video.."*\n🔸_мυтє αυ∂ισ :_ *"..settings.mute_audio.."*\n🔸_мυтє νσιcє :_ *"..settings.mute_voice.."*\n🔸_мυтє ѕтιcкєя :_ *"..settings.mute_sticker.."*\n🔸_мυтє cσηтαcт :_ *"..settings.mute_contact.."*\n🔸_мυтє ƒσяωαя∂ :_ *"..settings.mute_forward.."*\n🔸_мυтє ℓσcαтιση :_ *"..settings.mute_location.."*\n🔸_мυтє ∂σcυмєηт :_ *"..settings.mute_document.."*\n🔸_мυтє тgѕєяνιcє :_ *"..settings.mute_tgservice.."*\n🔸_мυтє кєувσαя∂ :_ *"..settings.mute_keyboard.."*\n*____________________*\n*gяσυρ ℓαηgυαgє* : *єη*\n*cн:*@blackandwhiteTM"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "*تنظیمات گروه:*\n_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n♠_قفل لینک :_ *"..settings.lock_link.."*\n♠_قفل تگ :_ *"..settings.lock_tag.."*\n♠_قفل فلود :_ *"..settings.flood.."*\n♠_قفل اسپم :_ *"..settings.lock_spam.."*\n♠_قفل فراخوانی :_ *"..settings.lock_mention.."*\n♠_قفل عربی :_ *"..settings.lock_arabic.."*\n♠_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n♠_قفل فونت :_ *"..settings.lock_markdown.."*\n♦_قفل انگلیسی :_ *"..settings.english.."*\n♦_قفل فحش :_ *"..settings.fosh.."*\n♦_قفل تبلیغات :_ *"..settings.ads.."*\n♦_قفل پست ویودار :_ *"..settings.views.."*\n♦_قفل شکلک :_ *"..settings.emoji.."*\n♦_پیام خوش آمد گویی :_ *"..settings.welcome.."*\n♦_قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n♦_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n♦_حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n*لیست بیصدا ها* : \n♣_بیصدا همه :_ *"..settings.mute_all.."*\n♣_بیصدا گیف :_ *"..settings.mute_gif.."*\n♣_بیصدا چت :_ *"..settings.mute_text.."*\n♣_بیصدا کیبورد شیشه ای :_ *"..settings.mute_inline.."*\n♣_بیصدا بازی های تحت وب :_ *"..settings.mute_game.."*\n♣_بیصدا عکس :_ *"..settings.mute_photo.."*\n♣_بیصدا فیلم :_ *"..settings.mute_video.."*\n♣_بیصدا آهنگ :_ *"..settings.mute_audio.."*\n♣_بیصدا ویس :_ *"..settings.mute_voice.."*\n♥_بیصدا استیکر :_ *"..settings.mute_sticker.."*\n♥_بیصدا مخاطب :_ *"..settings.mute_contact.."*\n♥_بیصدا فوروارد :_ *"..settings.mute_forward.."*\n♥_بیصدا مکان :_ *"..settings.mute_location.."*\n♥_بیصدا فایل :_ *"..settings.mute_document.."*\n♥_بیصدا خدمات تلگرام :_ *"..settings.mute_tgservice.."*\n♥_بیصدا صفحه کلید :_ *"..settings.mute_keyboard.."*\n*____________________*\n_زبان سوپرگروه_ : *FA*\n*cн:*@blackandwhiteTM"
+ text = "*تنظیمات گروه:*\n_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n♠_قفل لینک :_ *"..settings.lock_link.."*\n♠_قفل تگ :_ *"..settings.lock_tag.."*\n♠_قفل فلود :_ *"..settings.flood.."*\n♠_قفل اسپم :_ *"..settings.lock_spam.."*\n♠_قفل فراخوانی :_ *"..settings.lock_mention.."*\n♠_قفل عربی :_ *"..settings.lock_arabic.."*\n♠_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n♠_قفل فونت :_ *"..settings.lock_markdown.."*\n♦_قفل انگلیسی :_ *"..settings.english.."*\n♦_قفل فحش :_ *"..settings.fosh.."*\n♦_قفل تبلیغات :_ *"..settings.ads.."*\n♦_قفل پست ویودار :_ *"..settings.views.."*\n♦_قفل شکلک :_ *"..settings.emoji.."*\n♦_پیام خوش آمد گویی :_ *"..settings.welcome.."*\n♦_قفل سنجاق کردن :_ *"..settings.lock_pin.."*\n♦_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n♦_حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n*____________________*\n*لیست بیصدا ها* : \n♣_بیصدا همه :_ *"..settings.mute_all.."*\n♣_بیصدا گیف :_ *"..settings.mute_gif.."*\n♣_بیصدا چت :_ *"..settings.mute_text.."*\n♣_بیصدا کیبورد شیشه ای :_ *"..settings.mute_inline.."*\n♣_بیصدا بازی های تحت وب :_ *"..settings.mute_game.."*\n♣_بیصدا عکس :_ *"..settings.mute_photo.."*\n♣_بیصدا فیلم :_ *"..settings.mute_video.."*\n♣_بیصدا آهنگ :_ *"..settings.mute_audio.."*\n♣_بیصدا ویس :_ *"..settings.mute_voice.."*\n♥_بیصدا استیکر :_ *"..settings.mute_sticker.."*\n♥_بیصدا مخاطب :_ *"..settings.mute_contact.."*\n♥_بیصدا فوروارد :_ *"..settings.mute_forward.."*\n♥_بیصدا مکان :_ *"..settings.mute_location.."*\n♥_بیصدا فایل :_ *"..settings.mute_document.."*\n♥_بیصدا سرویس تلگرام :_ *"..settings.mute_tgservice.."*\n♥_بیصدا صفحه کلید :_ *"..settings.mute_keyboard.."*\n*____________________*\n_زبان سوپرگروه_ : *FA*\n*cн:*@blackandwhiteTM"
 end
 if not lang then
 text = string.gsub(text, "yes", "ყεร")
@@ -2907,7 +2907,7 @@ end
 if matches[2] == "bots"  or matches[2]=="ربات" then
 return lock_bots(msg, data, target)
 end
-if matches[2] == "markdown" or matches[2]=="مارکدون" then
+if matches[2] == "markdown" or matches[2]=="فونت" then
 return lock_markdown(msg, data, target)
 end
 if matches[2] == "webpage"  or matches[2]=="وب" then
@@ -2959,7 +2959,7 @@ end
 if matches[2] == "bots"  or matches[2]=="ربات" then
 return unlock_bots(msg, data, target)
 end
-if matches[2] == "markdown"  or matches[2]=="مارکدون" then
+if matches[2] == "markdown"  or matches[2]=="فونت" then
 return unlock_markdown(msg, data, target)
 end
 if matches[2] == "webpage" or matches[2]=="وب" then
@@ -3209,7 +3209,7 @@ tdcli_function ({
     return "_Group_ *flood* _sensitivity has been set to :_ *[ "..matches[2].." ]*"
        end
 		if matches[1]:lower() == 'clean' and is_owner(msg) or matches[1]:lower() == 'پاک کردن' and is_owner(msg) then
-			if matches[2] == 'mods' or  matches[2] == 'مدیران' then
+			if matches[2] == 'modlist' or  matches[2] == 'لیست مدیران' then
 				if next(data[tostring(chat)]['mods']) == nil then
             if not lang then
 					return "_No_ *moderators* _in this group_"
@@ -3347,19 +3347,19 @@ end
       end
     return about
   end
-  if matches[1] == 'filter' and is_mod(msg) or matches[1] == 'فیلتر' and is_mod(msg) then
+  if matches[1] == 'filter' and is_owner(msg) or matches[1] == 'فیلتر' and is_owner(msg) then
     return filter_word(msg, matches[2])
   end
-  if matches[1] == 'unfilter' and is_mod(msg) or matches[1] == 'حذف فیلتر' and is_mod(msg) then
+  if matches[1] == 'unfilter' and is_owner(msg) or matches[1] == 'حذف فیلتر' and is_owner(msg) then
     return unfilter_word(msg, matches[2])
   end
-  if matches[1] == 'filterlist' and is_mod(msg) or  matches[1] == 'لیست فیلتر' and is_mod(msg) then
+  if matches[1] == 'filterlist' and is_mod(msg) or  matches[1] == 'لیست فیلتر' and is_owner(msg) then
     return filter_list(msg)
   end
 if matches[1] == "settings" or matches[1] == "تنظیمات" then
 return group_settings(msg, target)
 end
-if matches[1] == "modlist" or matches[1] == "لیست ناظم" then
+if matches[1] == "modlist" or matches[1] == "لیست مدیران" then
 return modlist(msg)
 end
 if matches[1] == "ownerlist" and is_owner(msg) or  matches[1] == "لیست مالکان" and is_owner(msg)  then
@@ -3500,9 +3500,7 @@ _نمایش لینک گروه_
 *!setwelcome [text]*
 _ثبت پیام خوش آمد گویی_
 
-_شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید
-
-این راهنما فقط برای مدیران/مالکان گروه میباشد!
+_این راهنما فقط برای مدیران/مالکان گروه میباشد!
 
 این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!_
 
@@ -3518,7 +3516,7 @@ text = [[
 #مدیریت
 
 🔐برای مشاهده دستورات قفلی دستور زیر را ارسال کنید
-#قفل
+#قفل ها
 
 🔇برای مشاهده دستورات ممنوعیت دستور زیر را ارسال کنید
 #ممنوع
@@ -3528,10 +3526,12 @@ text = [[
 ➖➖➖➖➖
 در حال حاضر زبان ربات فارسی میباشد برای تغییر زبان دستور زیر را ارسال کنید
 
+*setlang en*
+یا or
+_تنظیم زبان انگلیسی_
+
 *کانال ما:*
 @blackandwhiteTM
-
-*!setlang en*
 ...
 ]]
 end
@@ -3670,8 +3670,8 @@ text3 = [[
 〰〰〰〰〰
 💬 میوت تایم دار
 عدد اول ساعت عدد دوم دقیقه
-🔇*!mt 0 1*
-🔊*!unmt*
+🔇*!mute 0 1*
+🔊*!unmute*
 〰〰〰〰〰
 در زدن دستورات به فاصله حروف دقت کنید
 ...
@@ -3697,17 +3697,17 @@ text4 = [[
 👑 *لیست مالکان*
 💬 نمایش لیست مالکان
 〰〰〰〰〰
-🤖 *لیست ناظر*
-💬 نمایش لیست ناظران
+🤖 *لیست مدیران*
+💬 نمایش لیست ناظران(کمک مدیر)
 〰〰〰〰〰
 🎖 *اطلاعات گروه*
 💬 نمایش اطلاعات گروه
 〰〰〰〰〰
 👑 *مالک* `[username|id|reply]` 
-💬 تعیین مالک اصلی گروه
+💬 تعیین مالک اصلی گروه♥[توسط سازنده ربات]
 〰〰〰〰〰
 👑 *حذف مالک* `[username|id|reply]` 
-💬 حذف مدیر اصلی 
+💬 حذف مالک اصلی گروه♥[توسط سازنده ربات]
 〰〰〰〰〰
 🤖 *کمک مدیر* `[username|id|reply]`
 💬 تعیین ناظر گروه
@@ -3734,6 +3734,7 @@ text4 = [[
 〰〰〰〰〰
 👊 *مسدود* `[username|id|reply]`
 ✋ *رفع مسدود* `[username|id|reply]`
+❌ *پاک کردن لیست مسدود*(حذف کل افرادازلیست بن)
 💬  مسدود کردن یک کاربر
 〰〰〰〰〰
 ✍ *تنظیم لینک*
@@ -3769,14 +3770,14 @@ text4 = [[
 〰〰〰〰〰
 ⏱ *!charge*  30
 ⏱ *!check*
-💬 تنظیم انقضای گروه
+💬 تنظیم انقضای گروه♥[توسط سازنده ربات]
 〰〰〰〰〰
 📣 *!broadcast* متن پیام
-💬 ارسال یک پیام به همه گروهایی که ربات مدیر است
+💬 ارسال یک پیام به همه گروهایی که ربات مدیر است♥[توسط سازنده ربات]
 〰〰〰〰〰
 ⚙*!autoleave enable*
 ⚙*!autoleave disable*
-💬 تنظیم خارج شدن اتوماتیک ربات
+💬 تنظیم خارج شدن اتوماتیک ربات♥[توسط سازنده ربات]
 ...
 در زدن دستورات به فاصله حروف دقت کنید
 ]]
@@ -3907,11 +3908,11 @@ patterns ={
 "^(ایدی)$",
 "^(id) (.*)$",
 "^(ایدی) (.*)$",
-"^[!/#](pin)$",
+"^(pin)$",
 "^(سنجاق)$",
-"^[!/#](unpin)$",
-"^(برداشتن سنجاق)$",
-"^[!/#](gpinfo)$",
+"^(unpin)$",
+"^(حذف سنجاق)$",
+"^(gpinfo)$",
 "^(اطلاعات گروه)$",
 "^[!/#](test)$",
 "^(add)$",
@@ -3922,9 +3923,9 @@ patterns ={
 "^(مالک)$",
 "^(setowner) (.*)$",
 "^(مالک)$",
-"^[!/#](remowner)$",
+"^(remowner)$",
 "^(حذف مالک)$",
-"^[!/#](remowner) (.*)$",
+"^(remowner) (.*)$",
 "^(حذف مالک) (.*)$",
 "^(promote)$",
 "^(کمک مدیر)$",
@@ -3935,8 +3936,8 @@ patterns ={
 "^(demote) (.*)$",
 "^(تنزل) (.*)$",
 "^(modlist)$",
-"^(لیست ناظم)$",
-"^[!/#](ownerlist)$",
+"^(لیست مدیران)$",
+"^(ownerlist)$",
 "^(لیست مالکان)$",
 "^(lock) (.*)$",
 "^(قفل) (.*)$",
@@ -3969,8 +3970,8 @@ patterns ={
 "^(setflood) (%d+)$",
 "^(حساسیت فلود) (%d+)$",
 "^(res) (.*)$",
-"^[!/#](رس) (.*)$",
-"^[!/#](whois) (%d+)$",
+"^(رس) (.*)$",
+"^(whois) (%d+)$",
 "^(help)$",
 "^(راهنما)$",
 "^(setlang) (.*)$",
@@ -3983,11 +3984,10 @@ patterns ={
 "^(لیست فیلتر)$",
 "^([https?://w]*.?t.me/joinchat/%S+)$",
 "^([https?://w]*.?telegram.me/joinchat/%S+)$",
-"^[!/#](تنظیم ولکام) (.*)",
-"^[!/#](ولکام) (.*)$"
-
+"^(تنظیم ولکام) (.*)",
+"^(ولکام) (.*)$"
 },
 run=run,
 pre_process = pre_process
 }
---end groupmanager.lua #beyond team#
+--end manager.lua #Black&White#

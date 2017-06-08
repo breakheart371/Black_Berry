@@ -1,5 +1,5 @@
 do
--- #Begin plugins.lua by @BeyondTeam
+-- #Begin plugins.lua by @blackandwhiteTM
 -- Returns the key (index) in the config.enabled_plugins table
 local function plugin_enabled( name )
   for k,v in pairs(_config.enabled_plugins) do
@@ -223,13 +223,13 @@ return {
           "!pl * : reloads all plugins." },
           },
   patterns = {
-    "^[!/#]([Pp]list)$",
-    "^[!/#]([Pp]l) (+) ([%w_%.%-]+)$",
-    "^[!/#]([Pp]l) (-) ([%w_%.%-]+)$",
-    "^[!/#]([Pp]l) (+) ([%w_%.%-]+) (chat)",
-    "^[!/#]([Pp]l) (-) ([%w_%.%-]+) (chat)",
-    "^[!/#]([Pp]l) (*)$",
-    "^[!/#]([Rr]eload)$"
+    "^([Pp]list)$",
+    "^([Pp]l) (+) ([%w_%.%-]+)$",
+    "^([Pp]l) (-) ([%w_%.%-]+)$",
+    "^([Pp]l) (+) ([%w_%.%-]+) (chat)",
+    "^([Pp]l) (-) ([%w_%.%-]+) (chat)",
+    "^([Pp]l) (*)$",
+    "^([Rr]eload)$"
     },
   run = run,
   moderated = true, -- set to moderator mode
