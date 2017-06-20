@@ -45,7 +45,7 @@ redis:setex('autodeltime', 14400, true)
      run_bash("rm -rf ~/.telegram-cli/data/document/*")
      run_bash("rm -rf ~/.telegram-cli/data/profile_photo/*")
      run_bash("rm -rf ~/.telegram-cli/data/encrypted/*")
-	 run_bash("rm -rf ~/MaTaDoR/photos/*")
+	 run_bash("rm -rf ~/black_berry/photos/*")
 end
 	if data[tostring(chat)] and data[tostring(chat)]['settings'] then
 		settings = data[tostring(chat)]['settings']
