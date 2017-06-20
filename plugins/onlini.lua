@@ -2,7 +2,7 @@ do
 
 local function run(msg, matches)
 if matches[1]=="انلاینی" and is_sudo(msg) then 
-return  "اره عزیزم😜✋"
+return  "اره اقابابک😜✋"
 elseif matches[1]=="انلاینی" and is_admin(msg) then 
 return  "اره فضول"
 elseif matches[1]=="انلاینی" and is_owner(msg) then 
