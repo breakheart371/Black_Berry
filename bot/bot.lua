@@ -16,7 +16,7 @@ JSON = (loadfile "./libs/dkjson.lua")()
 local lgi = require ('lgi')
 local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
---run_bash("~/Black_Berry/clearcache.sh")
+--run_bash("~/black_berry/clearcache.sh")
 chats = {}
 
 
@@ -105,33 +105,16 @@ function create_config( )
 	cmd = '^[/!#]',
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Black_Berry v5.0
+    info_text = [[》black_berry v5.0
 An advanced administration bot based on https://valtman.name/telegram-cli
 
-》https://github.com/babakkhan375/blackandwhite
+》https://github.com/breakheart371/black_berry
 
-》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer《
-》@Rixel ➣ Developer 《
-》@Exacute ➣ Developer《
-》@To0fan ➣ Developer《
-》@CiveY ➣ Developer
-》@K_a_I_i_I_i_n_u_x ➣ Developer《
-》@ArmanDev ➣ Manager《
-》@MrPars ➣ Manager《
+》Sudo and creator :
+》@sudo_hacker ➣ 《
 
-》Special thanks to :
-》@Vysheng
-》@MrHalix
-》@Nero_Dev
-》And Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://BeyondTeam.ir
+》Bot channel :
+》@blackandwhiteTM《
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
