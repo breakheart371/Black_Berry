@@ -91,7 +91,7 @@ function create_config( )
 	config = {
     enabled_plugins = {
 		"banhammer",
-		"manager2",
+		"Group",
 		"msg-checks",
 		"plugins",
 		"tools",
@@ -110,10 +110,10 @@ An advanced administration bot based on https://valtman.name/telegram-cli
 
 》https://github.com/breakheart371/black_berry
 
-》Sudo and creator :
-》@sudo_hacker ➣ 《
+》Admins :
+》@sudo_hacker ➣ Founder & Developer《
 
-》Bot channel :
+》Our channel :
 》@blackandwhiteTM《
 ]],
   }
