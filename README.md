@@ -3,7 +3,7 @@
 **An advanced and powerful administration bot based on NEW TG-CLI
 
 * * *
-
+ برای نصب و ساختن ربات کد های زیر را به ترتیب در ترمینال خود وارد کنید
 # Installation
 
 ```sh
