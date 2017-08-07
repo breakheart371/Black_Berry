@@ -401,12 +401,14 @@ msg.text:match("ad") or
 msg.text:match("add bia pv") or
 msg.text:match("adi") or
 msg.text:match("ادی بیا پی وی") or msg.text:match("اددی") or
-msg.text:match("تیز پی وی") or msg.text:match("ادی بیا پی") or msg.text:match("اد") or
+msg.text:match("تیز پی وی") or
+msg.text:match("ادی بیا پی") or
+msg.text:match("اد") or
 msg.text:match("عشقم بیا پیوی کارت دارم")
 if tabchi_msg
 and lock_tabchi == "yes" then
- if is_channel then
-   del_msg (chat, tonumber(msg.id))
+if is_channel then
+del_msg (chat, tonumber(msg.id))
    end
  end
 	
@@ -539,7 +541,9 @@ msg.text:match("ad") or
 msg.text:match("pv") or
 msg.text:match("adi bia pv") or
 msg.text:match("ادی بیا پی وی") or msg.text:match("اددی") or
-msg.text:match("تیز پی وی") or msg.text:match("ادی بیا پی") or msg.text:match("اد") or
+msg.text:match("تیز پی وی") or
+ msg.text:match("ادی بیا پی") or
+ msg.text:match("اد") or
 msg.text:match("عشقم بیا پیوی کارت دارم")
 if tabchi_msg
 and lock_tabchi == "yes" then
