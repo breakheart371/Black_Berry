@@ -52,8 +52,10 @@ More information [black & white Global Chat](https://t.me/joinchat/)
 
 # Developers!
 
-[babakkhan](https://github.com/babakkhan375) ([Telegram](https://telegram.me/sudo_hacker))
+[babakkhan](https://github.com/babakkhan375) ([Telegram](https://telegram.me/sudo_hacker)) برنامه نویس
 
 ### Telegram channel:
 
-[@blackandwhiteTM](https://telegram.me/BlackAndWhiteTM)
+[@blackandwhiteTM](https://telegram.me/BlackAndWhiteTM) کانال ما
+
+موفق باشید
