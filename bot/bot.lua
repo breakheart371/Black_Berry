@@ -85,7 +85,7 @@ function create_config( )
 	config = {
     enabled_plugins = {
     "banhammer",
-    "manager2",
+    "Group",
     "msg-checks",	
     "plugins",
     "tools",
