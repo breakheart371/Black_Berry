@@ -1,6 +1,3 @@
--- #Black_Berry Robot
--- #@BlackAndWhiteTM
-
 tdcli = dofile('./libs/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
@@ -16,9 +13,8 @@ JSON = (loadfile "./libs/dkjson.lua")()
 local lgi = require ('lgi')
 local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
---run_bash("~/black_berry/clearcache.sh")
 chats = {}
-
+helper_id = 418516842 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -85,30 +81,25 @@ function whoami()
 end
 
 function create_config( )
-  io.write('\n\27[1;33m Input your id number the telegram (id) here : \27[0;39;49m\n')
-  local sudo_id =  tonumber(io.read())
   -- A simple config with basic plugins and ourselves as privileged user
 	config = {
     enabled_plugins = {
-		"banhammer",
-		"Group",
-		"msg-checks",
-		"plugins",
-		"tools",
-		"rank",
+    "banhammer",
+    "manager2",
+    "msg-checks",	
+    "plugins",
+    "tools",
+    "rank"
 	},
-    sudo_users = {
-   229445008,
-   sudo_id
-},
+    sudo_users = {229445008},
     admins = {},
-	cmd = '^[/!#]',
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》black_berry v5.0
+    info_text = [[
+	》Black_Berry v5.0
 An advanced administration bot based on https://valtman.name/telegram-cli
 
-》https://github.com/breakheart371/black_berry
+》https://github.com/breakheart371/Black_Berry 
 
 》Admins :
 》@sudo_hacker ➣ Founder & Developer《
@@ -324,66 +315,7 @@ pre_process_msg(msg)
 
 end
 
-function file_cb(msg)
-	if msg.content_.ID == "MessagePhoto" then
-		photo_id = ''
-		local function get_cb(arg, data)
-		if data.content_.photo_.sizes_[2] then
-			photo_id = data.content_.photo_.sizes_[2].photo_.id_
-			else
-			photo_id = data.content_.photo_.sizes_[1].photo_.id_
-			end
-			tdcli.downloadFile(photo_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageVideo" then
-		video_id = ''
-		local function get_cb(arg, data)
-			video_id = data.content_.video_.video_.id_
-			tdcli.downloadFile(video_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageAnimation" then
-		anim_id, anim_name = '', ''
-		local function get_cb(arg, data)
-			anim_id = data.content_.animation_.animation_.id_
-			anim_name = data.content_.animation_.file_name_
-			 tdcli.downloadFile(anim_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageVoice" then
-		voice_id = ''
-		local function get_cb(arg, data)
-			voice_id = data.content_.voice_.voice_.id_
-			tdcli.downloadFile(voice_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageAudio" then
-		audio_id, audio_name, audio_title = '', '', ''
-		local function get_cb(arg, data)
-			audio_id = data.content_.audio_.audio_.id_
-			audio_name = data.content_.audio_.file_name_
-			audio_title = data.content_.audio_.title_
-			tdcli.downloadFile(audio_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageSticker" then
-		sticker_id = ''
-		local function get_cb(arg, data)
-			sticker_id = data.content_.sticker_.sticker_.id_
-			tdcli.downloadFile(sticker_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-	elseif msg.content_.ID == "MessageDocument" then
-		document_id, document_name = '', ''
-		local function get_cb(arg, data)
-			document_id = data.content_.document_.document_.id_
-			document_name = data.content_.document_.file_name_
-			tdcli.downloadFile(document_id, dl_cb, nil)
-		end
-		tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = msg.id_ }, get_cb, nil)
-end
-end
+
 function tdcli_update_callback (data)
 	if (data.ID == "UpdateNewMessage") then
 
@@ -404,7 +336,6 @@ function tdcli_update_callback (data)
 		end
    if msg_valid(msg) then
 		var_cb(msg, msg)
-		file_cb(msg)
 	if msg.content_.ID == "MessageText" then
 			msg.text = msg.content_.text_
 			msg.edited = false
@@ -480,4 +411,3 @@ end
 		tdcli_function ({ID="GetChats", offset_order_="9223372036854775807", offset_chat_id_=0, limit_=20}, dl_cb, nil)    
 	end
 end
-
